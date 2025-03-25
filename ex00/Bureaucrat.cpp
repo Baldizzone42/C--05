@@ -6,7 +6,7 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 18:57:37 by jormoral          #+#    #+#             */
-/*   Updated: 2025/03/23 17:12:00 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/03/25 19:02:37 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,10 @@ Bureaucrat::Bureaucrat(const std::string name, int grade) : name(name), grade(gr
 	{
 		if (this->grade > 150)
 		{
-			this->grade = 150;
 			throw(Bureaucrat::GradeTooLowException());
 		}
 		else if (this->grade < 1)
 		{
-			this->grade = 150;
 			throw(Bureaucrat::GradeTooHighException());
 		}
 	}
