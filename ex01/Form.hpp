@@ -6,7 +6,7 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 20:54:45 by jormoral          #+#    #+#             */
-/*   Updated: 2025/03/23 18:10:04 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/03/26 16:22:48 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class Form
 		~Form();
 		Form(const Form &other);
 		Form& operator=(const Form &other);
-		Form(std::string name, bool _signed, const int sign, const int execute);
+		Form(std::string name, const int sign, const int execute);
 
 		const std::string getName();
 		bool getSigned();

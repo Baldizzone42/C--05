@@ -6,7 +6,7 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 21:56:15 by jormoral          #+#    #+#             */
-/*   Updated: 2025/03/24 15:56:41 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/03/26 16:26:43 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,10 @@ AForm& AForm::operator=(const AForm &other)
 	return *this;
 }
 
-AForm::AForm(std::string name, bool _signed, const int sign, const int execute)
-: name(name), _signed(_signed), sign(sign), _execute(execute)
+AForm::AForm(std::string name,  const int sign, const int execute)
+: name(name), sign(sign), _execute(execute)
 {
+	this->_signed = false;
 	if(this->_signed == true)
 	{
 		std::cout << "this Form " << this->getName() << " it's signed\n";

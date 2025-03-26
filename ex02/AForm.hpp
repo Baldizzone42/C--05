@@ -6,7 +6,7 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 20:54:45 by jormoral          #+#    #+#             */
-/*   Updated: 2025/03/24 15:56:01 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/03/26 16:23:44 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class AForm
 		virtual ~AForm();
 		AForm(const AForm &other);
 		AForm& operator=(const AForm &other);
-		AForm(std::string name, bool _signed, const int sign, const int _execute);
+		AForm(std::string name, const int sign, const int _execute);
 
 		const std::string getName() const;
 		bool getSigned() const;
