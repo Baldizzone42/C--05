@@ -12,11 +12,11 @@
 
 #include "RobotomyRequestForm.hpp"
 
-RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", false, 72, 45), target("Robotomy") {
+RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm",  72, 45), target("Robotomy") {
 	std::cout << "Presidential Form Constructor\n";
 }
 
-RobotomyRequestForm::RobotomyRequestForm(const std::string target) : AForm("RobotomyRequestForm", false, 72, 45), target(target) {
+RobotomyRequestForm::RobotomyRequestForm(const std::string target) : AForm("RobotomyRequestForm", 72, 45), target(target) {
 	std::cout << "Presidential Form Constructor\n";
 }
 

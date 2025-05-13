@@ -6,7 +6,7 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 18:53:28 by jormoral          #+#    #+#             */
-/*   Updated: 2025/03/22 19:56:17 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/05/12 18:01:25 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,5 @@ class Bureaucrat
 
 std::ostream& operator<<(std::ostream& output, Bureaucrat& other);
 std::string IntToString(int i);
-
-//Bureaucrat::GradeTooHighException;
-//Bureaucrat::GradeTooLowException;
 
 #endif

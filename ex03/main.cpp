@@ -6,7 +6,7 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 19:55:45 by jormoral          #+#    #+#             */
-/*   Updated: 2025/03/25 18:59:08 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/04/01 17:13:10 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,14 @@
 
 int main(void)
 {
-	Intern someRandomIntern;
-	AForm* rrf;
-	rrf = someRandomIntern.makeForm("PreSIDEntial pardon", "Bender");
+	/* ntern someRandomIntern;
+	Bureaucrat buro;
+
+	AForm *rrf = someRandomIntern.makeForm("", "");
+	buro.signForm(*rrf); */
+	//someRandomIntern.makeForm("PreSIDEntial pardon", "Bender");
 	
-	delete rrf;
+//	delete rrf;
 	/* Bureaucrat buro("manin", 5);
 	//PresidentialPardonForm Manolo("Horse");
 	//ShrubberyCreationForm pepi;

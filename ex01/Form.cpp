@@ -6,7 +6,7 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 21:56:15 by jormoral          #+#    #+#             */
-/*   Updated: 2025/03/26 16:22:41 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/05/13 20:09:43 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,27 +96,27 @@ void Form::beSigned(Bureaucrat& other)
 
 const char *Form::ItWasSignedException::what() const throw()
 {
-	return "it's already signed\n";
+	return "It's already signed\n";
 }
 
 const char *Form::GradeTooHighException::what() const throw()
 {
-	return "grade too High!\n";
+	return "Grade too High!\n";
 }
 
 const char *Form::GradeTooLowException::what() const throw()
 {
-	return "grade too Low!\n";
+	return "Grade too Low!\n";
 }
 
 std::ostream& operator<<(std::ostream& output, Form& other)
 {
 	output << "Form name: " << other.getName() << std::endl;
 	if(other.getSigned() == true)
-		output << "It was signed\n";
+		output << "It was signed";
 	else
-		output << "Could not be signed\n";
-	output << "Sign Grade " << other.getGradeToSign() << std::endl;
-	output << "Execute Grade " << other.getGradeToExecute() << std::endl;
+		output << "Not signed";
+	output << ", sign Grade " << other.getGradeToSign();
+	output << ", execute Grade " << other.getGradeToExecute() << std::endl;
 	return output;
 }

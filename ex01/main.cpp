@@ -6,7 +6,7 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 19:55:45 by jormoral          #+#    #+#             */
-/*   Updated: 2025/03/23 18:11:28 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/05/13 20:12:43 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,17 @@
 
 int main(void)
 {
-	Bureaucrat St("el firmas", 97);
-	Form pilot("titulo de avioneta finladesa", false, 96, 2);
+	Bureaucrat Sr("Don", 130);
+	Form pilot("titulo de avioneta finladesa", 129, 2);
 	
-	pilot.beSigned(St);
-	St.incrementGrade();
-	pilot.beSigned(St);
-	pilot.beSigned(St);
+	
+	//std::cout << Sr << std::endl;
+	//pilot.beSigned(Sr);
+	Sr.signForm(pilot);
+	Sr.incrementGrade();
+	pilot.beSigned(Sr);
+	//pilot.beSigned(Sr); 
 	std::cout << pilot;
-	
 	
 	return 0;
 }

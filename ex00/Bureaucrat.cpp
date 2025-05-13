@@ -6,7 +6,7 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 18:57:37 by jormoral          #+#    #+#             */
-/*   Updated: 2025/03/25 19:02:37 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/05/13 19:09:34 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,10 +25,12 @@ Bureaucrat::Bureaucrat(const std::string name, int grade) : name(name), grade(gr
 	{
 		if (this->grade > 150)
 		{
+			this->grade = 150;
 			throw(Bureaucrat::GradeTooLowException());
 		}
 		else if (this->grade < 1)
 		{
+			this->grade = 150;
 			throw(Bureaucrat::GradeTooHighException());
 		}
 	}
@@ -112,6 +114,9 @@ std::string IntToString(int i)
 
 std::ostream& operator<<(std::ostream& output, Bureaucrat& other)
 {
-	output << other.getName() + ", bureaucrat grade " + IntToString(other.getGrade());
+	if(other.getName() == "")
+		output << "no_name" << ", bureaucrat grade " + IntToString(other.getGrade());
+	else
+		output << other.getName() + ", bureaucrat grade " + IntToString(other.getGrade());
 	return output;
 }

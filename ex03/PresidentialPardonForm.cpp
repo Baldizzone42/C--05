@@ -6,17 +6,17 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 12:12:37 by jormoral          #+#    #+#             */
-/*   Updated: 2025/03/24 16:07:41 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/03/30 17:31:49 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PresidentialPardonForm.hpp"
 
-PresidentialPardonForm::PresidentialPardonForm() : AForm("PresidentialPardomForm", false, 25, 5), target("(null)") {
+PresidentialPardonForm::PresidentialPardonForm() : AForm("PresidentialPardomForm", 25, 5), target("(null)") {
 	std::cout << "Presidential Form Constructor\n";
 }
 
-PresidentialPardonForm::PresidentialPardonForm(const std::string target) : AForm("PresidentialPardomForm", false, 25, 5), target(target) {
+PresidentialPardonForm::PresidentialPardonForm(const std::string target) : AForm("PresidentialPardomForm", 25, 5), target(target) {
 	std::cout << "Presidential Form Constructor\n";
 }
 
