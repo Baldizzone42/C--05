@@ -6,7 +6,7 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 19:53:23 by jormoral          #+#    #+#             */
-/*   Updated: 2025/04/01 17:12:56 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/05/14 14:54:49 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,10 @@ AForm* Intern::makeForm(std::string name, std::string target)
 		}
 	}
 	if(!base)
+	{
 		std::cout << "This type of form does not exist\n";
+		exit(1);
+	}
 	else 
 		std::cout << "Inter creates " << name << std::endl;
 	return base;

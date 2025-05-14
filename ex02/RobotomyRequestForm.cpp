@@ -12,11 +12,11 @@
 
 #include "RobotomyRequestForm.hpp"
 
-RobotomyRequestForm::RobotomyRequestForm() :  target("Robotomy") {
+RobotomyRequestForm::RobotomyRequestForm() : AForm("RobotomyRequestForm", 72, 45), target("Robotomy") {
 	std::cout << "Presidential Form Constructor\n";
 }
 
-RobotomyRequestForm::RobotomyRequestForm(const std::string target) :  target(target) {
+RobotomyRequestForm::RobotomyRequestForm(const std::string target) : AForm("RobotomyRequestForm", 72, 45), target(target) {
 	std::cout << "Presidential Form Constructor\n";
 }
 
@@ -50,8 +50,7 @@ int RobotomyRequestForm::concrete_execute(Bureaucrat const & executor) const
 		{
 			srand(static_cast<unsigned int>(time(0)));
 			int n =  rand();
-
-			std::cout << n;
+			//std::cout << n;
 			if(n  % 2 == 0)
 				std::cout << this->target << " has been robotomized " << std::endl;
 			else

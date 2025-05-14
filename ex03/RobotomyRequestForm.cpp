@@ -50,8 +50,7 @@ int RobotomyRequestForm::concrete_execute(Bureaucrat const & executor) const
 		{
 			srand(static_cast<unsigned int>(time(0)));
 			int n =  rand();
-
-			std::cout << n;
+			//std::cout << n;
 			if(n  % 2 == 0)
 				std::cout << this->target << " has been robotomized " << std::endl;
 			else

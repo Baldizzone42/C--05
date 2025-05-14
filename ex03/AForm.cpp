@@ -6,7 +6,7 @@
 /*   By: jormoral <jormoral@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/22 21:56:15 by jormoral          #+#    #+#             */
-/*   Updated: 2025/03/26 16:26:43 by jormoral         ###   ########.fr       */
+/*   Updated: 2025/05/14 13:10:42 by jormoral         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,6 +117,9 @@ const char *AForm::GradeTooLowException::what() const throw()
 
 void AForm::execute(Bureaucrat const & executor) 
 {
+	/* if(executor == "(null)")
+		return ;
+	else */
 	executor.executeForm(*this);
 }
 
